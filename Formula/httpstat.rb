@@ -1,9 +1,9 @@
 class Httpstat < Formula
   desc "HTTP performance measurement tool with waterfall output and trace"
   homepage "https://github.com/vandancd/httpstat"
-  url "https://github.com/vandancd/httpstat/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "7074e0c7b5de2a7125af45217b08c55e8c302ee8d7559fbf79939a514b36d650"
-  version "1.1.1"
+  url "https://github.com/vandancd/httpstat/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "d8e7bcff20ee7b5192807c21cd02e0c58e567366af80a26e75142953860623b6"
+  version "1.2.0"
   license "MIT"
 
   depends_on "go" => :build
@@ -13,6 +13,6 @@ class Httpstat < Formula
   end
 
   test do
-    assert_match "httpstat 1.1", shell_output("#{bin}/httpstat --version")
+    assert_match "httpstat 1.2.0", shell_output("#{bin}/httpstat --version")
   end
 end
